@@ -1,0 +1,7 @@
+.idea
+.vscode
+*.log
+src/tests/*
+src/Http
+src/routes
+src/views

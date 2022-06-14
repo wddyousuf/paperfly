@@ -1,0 +1,19 @@
+{
+    "name": "wddyousuf/paperfly",
+    "description": "This package is an API integration for paperfly courier",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "wddyousuf",
+        "email": "saikatyousuf@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wddyousuf\\Paperfly\\": "src/"
+        }
+    }
+}
