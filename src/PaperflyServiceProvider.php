@@ -1,6 +1,7 @@
 <?php
 namespace Wddyousuf\Paperfly;
 use Illuminate\Support\ServiceProvider;
+use Wddyousuf\Paperfly\Provider\PaperflyCourier;
 
 class PaperflyServiceProvider extends ServiceProvider{
     public function boot()
@@ -12,6 +13,8 @@ class PaperflyServiceProvider extends ServiceProvider{
 
     public function register()
     {
-
+        $this->app->bind('PaperflyCourier', function () {
+            return new PaperflyCourier();
+        });
     }
 }
